@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo Metropolitano de NY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor mt-4">
+        <h1 class="texto-centro">Museo Metropolitano de NY</h1>
+        
+        <!-- Select para departamentos -->
+        <div class="grupo-formulario">
+            <label for="seleccion-departamento">Seleccionar Departamento:</label>
+            <select id="seleccion-departamento" class="control-formulario">
+                <option value="">Selecciona un departamento</option>
+            </select>
+        </div>
+    
+        <!-- Input para busqueda por palabra clave -->
+        <div class="grupo-formulario">
+            <label for="entrada-palabra">Buscar por palabra clave:</label>
+            <input type="text" id="entrada-palabra" class="control-formulario" placeholder="Ej. pintura, escultura">
+        </div>
+    
+        <!-- Input para localizacion -->
+        <div class="grupo-formulario">
+            <label for="entrada-localizacion">Buscar por localización:</label>
+            <input type="text" id="entrada-localizacion" class="control-formulario" placeholder="Ej. Francia, Egipto">
+        </div>
+    
+        <!-- Boton para buscar -->
+        <button id="boton-buscar" class="boton-primario">Buscar</button>
+    
+        <!-- Contenedor para las tarjetas de los objetos -->
+        <div id="contenedor-tarjetas" class="fila mt-4"></div>
+    
+        <!-- Controles de paginación -->
+        <div class="paginacion mt-4">
+            <button id="anterior" class="boton-secundario" disabled>Anterior</button>
+            <span id="pagina-actual" class="texto-mutedo">1</span>
+            <button id="siguiente" class="boton-secundario">Siguiente</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
